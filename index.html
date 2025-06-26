@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneha Pandey | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            pop: ['Poppins', 'sans-serif']
+          },
+          colors: {
+            primary: '#0b63f6',
+            darkbg: '#0f172a'
+          }
+        }
+      }
+    };
+  </script>
+
+  <script defer src="script.js"></script>
+</head>
+<body class="font-pop text-gray-800 dark:bg-darkbg dark:text-gray-200">
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/70 dark:bg-darkbg/70 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#home" class="text-xl font-semibold text-primary">Sneha</a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="#home" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#skills" class="hover:text-primary">Skills</a>
+        <a href="#experience" class="hover:text-primary">Experience</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+
+      <!-- Theme Toggle -->
+      <button id="theme-toggle" aria-label="Toggle Dark Mode" class="text-2xl md:ml-6">
+        <span id="theme-icon" class="material-symbols-outlined select-none">dark_mode</span>
+      </button>
+
+      <!-- Mobile toggle -->
+      <button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+        <span class="material-symbols-outlined select-none">menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white dark:bg-darkbg transform translate-x-full transition-transform duration-300 md:hidden">
+      <button id="nav-close" class="absolute top-4 right-4 text-2xl">
+        <span class="material-symbols-outlined select-none">close</span>
+      </button>
+      <ul class="mt-20 space-y-8 px-8 text-lg font-medium">
+        <li><a href="#home" class="block hover:text-primary">Home</a></li>
+        <li><a href="#about" class="block hover:text-primary">About</a></li>
+        <li><a href="#skills" class="block hover:text-primary">Skills</a></li>
+        <li><a href="#experience" class="block hover:text-primary">Experience</a></li>
+        <li><a href="#projects" class="block hover:text-primary">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-primary">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-white dark:from-slate-800 dark:to-slate-900 pt-20">
+    <div class="text-center px-6">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm <span class="text-primary">Sneha Pandey</span></h1>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Full‑Stack Developer & CS Student</h2>
+      <p class="max-w-2xl mx-auto mb-6">I craft responsive, accessible web experiences that delight users and deliver results. From designing pixel‑perfect UIs to building robust back‑end APIs, I love turning great ideas into reality.</p>
+      <a href="resume.pdf" download class="inline-block bg-primary hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-primary">About</span> Me</h2>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="mb-4">I'm currently pursuing a B.Tech in Computer Science at <strong>Graphic Era Hill University</strong> with a CGPA of 8.4. My journey in tech started with curiosity and evolved into a passion for crafting digital solutions that make a difference.</p>
+          <p class="mb-4">Beyond coding, I’m fascinated by user experience, accessibility, and performance optimization. When I’m not at my desk, you’ll find me sketching UI ideas, exploring the Himalayas, or reading about behavioral psychology.</p>
+          <p class="mb-4">My mission? Build inclusive products that empower people and positively impact lives.</p>
+        </div>
+        <img src="e:\WhatsApp Image 2025-06-26 at 23.23.51_1c74beb5.jpg" alt="Sneha working on a laptop" class="rounded-xl shadow-lg dark:shadow-slate-800/40">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="bg-gray-50 dark:bg-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Tech <span class="text-primary">Stack</span></h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <!-- Each skill -->
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12" alt="JavaScript">
+          <span class="mt-2">JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12" alt="React">
+          <span class="mt-2">React.js</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-12 h-12" alt="Node.js">
+          <span class="mt-2">Node.js</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12" alt="HTML5">
+          <span class="mt-2">HTML5</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12" alt="CSS3">
+          <span class="mt-2">CSS3</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-12 h-12" alt="TailwindCSS">
+          <span class="mt-2">Tailwind CSS</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="w-12 h-12" alt="Firebase">
+          <span class="mt-2">Firebase</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12" alt="MySQL">
+          <span class="mt-2">SQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Section ===== -->
+  <section id="experience" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
+
+      <div class="space-y-8">
+        <!-- Item -->
+        <div class="bg-white dark:bg-slate-700/30 border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-800/40">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">Web Development Intern <span class="text-primary">@ Astu Software Solutions</span></h3>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Jan 2025 – Mar 2025</span>
+          </div>
+          <p class="mb-3">Contributed to <a href="https://eninrac.com/" target="_blank" class="text-primary underline">eninrac.com</a>, a data‑driven energy analytics platform.</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Developed dynamic dashboards with React and Chart.js for real‑time insights.</li>
+            <li>Optimized Lighthouse performance score from 62 ➔ 93 by code‑splitting and lazy‑loading assets.</li>
+            <li>Integrated RESTful APIs and ensured pixel‑perfect responsiveness across devices.</li>
+          </ul>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white dark:bg-slate-700/30 border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm dark:shadow-slate-800/40">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-semibold">Open‑Source Contributor <span class="text-primary">@ GirlScript Summer of Code</span></h3>
+            <span class="text-sm text-gray-500 dark:text-gray-400">Summer 2024</span>
+          </div>
+          <p class="mb-3">Contributed to accessibility improvements in a React‑Native health‑tracker app.</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Implemented dark‑mode support and reduced contrast issues, boosting a11y score by 30%.</li>
+            <li>Refactored state management with Redux Toolkit, reducing codebase size by 12%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="bg-gray-50 dark:bg-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Featured <span class="text-primary">Projects</span></h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div class="bg-white dark:bg-slate-700/30 border border-gray-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm dark:shadow-slate-800/40">
+          <img src="https://media.gettyimages.com/id/1468497276/photo/healthcare-portrait-and-team-of-doctors-in-the-hospital-standing-after-a-consultation-or.jpg?s=612x612&w=0&k=20&c=ybUCdBzR4WIb2VMgLsXHzkcBD6LJDFGCMzS3aSLS9ok=" alt="Overall Health App" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Overall Health</h3>
+            <p class="mb-4">Fitness web app educating users on holistic well‑being. Built with React, Firebase, Node.js & Tailwind.</p>
+            <a href="https://my-fitness-app-gules.vercel.app/" target="_blank" class="text-primary font-medium underline">Live Demo</a>
+            <span class="mx-2">|</span>
+            <a href="https://github.com/snee-a/My-fitness-app" target="_blank" class="text-primary font-medium underline">Code</a>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="bg-white dark:bg-slate-700/30 border border-gray-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm dark:shadow-slate-800/40">
+          <img src="https://thumbs.dreamstime.com/b/lms-learning-management-system-acronym-software-application-administration-documentation-tracking-reporting-automation-277214294.jpg" alt="Learning Management System" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Learning Management System</h3>
+            <p class="mb-4">Scalable LMS for 10k+ users with role-based access, OTP auth, and interactive dashboards.</p>
+            <a href="https://github.com/snee-a/Study-Notion" target="_blank" class="text-primary font-medium underline">Code</a>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="bg-white dark:bg-slate-700/30 border border-gray-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm dark:shadow-slate-800/40">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=60" alt="Corporate Consulting Website" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Corporate Consulting Website</h3>
+            <p class="mb-4">Professional site showcasing consulting services, client testimonials, and contact forms.</p>
+            <a href="#" class="text-primary font-medium underline">Live Demo</a>
+            <span class="mx-2">|</span>
+            <a href="https://github.com/snee-a/Corporate-Consulting-Website" target="_blank" class="text-primary font-medium underline">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Let’s <span class="text-primary">Connect</span></h2>
+      <p class="mb-8">Whether you want to discuss a project, collaborate, or simply say hello, my inbox is always open. I'll try my best to get back to you!</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-6 text-lg font-medium">
+        <a href="mailto:pandeysneha953@gmail.com" class="flex items-center gap-2 hover:text-primary">
+          <span class="material-symbols-outlined">mail</span>Email
+        </a>
+        <a href="https://www.linkedin.com/in/sneha-pandey-a530342b3" target="_blank" class="flex items-center gap-2 hover:text-primary">
+          <span class="material-symbols-outlined">link</span>LinkedIn
+        </a>
+        <a href="https://github.com/snee-a" target="_blank" class="flex items-center gap-2 hover:text-primary">
+          <span class="material-symbols-outlined">code</span>GitHub
+        </a>
+        <span class="flex items-center gap-2">
+          <span class="material-symbols-outlined">call</span>+91 97195 65550
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-gray-50 dark:bg-slate-900 py-6">
+    <p class="text-center text-sm dark:text-gray-400">&copy; 2025 Sneha Pandey. Built with ❤️ and Tailwind CSS.</p>
+  </footer>
+
+  <!-- Google Icons (Material Symbols) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500" rel="stylesheet" />
+</body>
+</html>
